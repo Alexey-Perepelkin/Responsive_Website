@@ -63,6 +63,21 @@ a {
 .buttonCopy {
   display: flex;
   gap: 25px;
+  position: relative;
+}
+.number{
+  color: white;
+  width: 19px;
+  height: 19px;
+  background: #f16d7f;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  z-index: 1;
 }
 
 /* baner
@@ -72,6 +87,7 @@ a {
   background: #f1e4e6;
   width: 100%;
 }
+
 .baner__inner {
   display: grid;
   grid-template-rows: 1fr;
