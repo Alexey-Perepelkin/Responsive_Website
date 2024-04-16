@@ -11,6 +11,9 @@ body {
   color: black;
   background: #fff;
 }
+img {
+  display: block;
+}
 .title {
   font-size: 48px;
   font-weight: 900;
@@ -278,14 +281,20 @@ a {
   gap: 90px;
   padding: 103px 0 104px;
 }
-.feature__item {
+/* .feature__item {
   width: 33.33%;
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: 3;
   gap: 17px;
-
-  text-align: center;
+ align-self: center;
+  justify-self: center;
+} */
+.feature__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
 }
 
 .feature__title {
@@ -400,6 +409,61 @@ a {
 
   border-radius: 0 25px 25px 0;
 }
+.copyright {
+  background: rgba(34, 34, 36, 1);
+  width: 100%;
+  height: 79px;
+  padding: 24px 0 23px;
+}
+.copyright__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__text {
+  color: rgb(251, 251, 251);
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+/* Social
+=================== */
+.social {
+  display: flex;
+  gap: 7.29px;
+}
+
+.social__item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background: white;
+  
+}
+.social__item:hover{
+  background: rgba(241, 109, 127, 1);
+
+}
+.social__item:hover .social__icom{
+  fill: #fff;
+}
+
+.social__icom{
+  display: block;
+  height: 16px;
+}
+
+
+
+
+
+
+
 @media (min-width: 768px) and (max-width: 1140px) {
   .conteiner {
     max-width: 736px;
